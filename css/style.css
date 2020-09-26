@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f8fc;
+    color: #141c2c;
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    color: #2762eb;
+    text-decoration: 3px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 20px solid #e5ebf8;
+    width: 1000px;
+    max-width: 100%;
+    display: flex;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    border-right: 1px solid #ecf2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    flex: 1.2;
+}
+
+.btn {
+    background-color: #141c2c;
+    border: 2px solid #141c2c;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border-color: #ecf2ff;
+    color: #141c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.form-control {
+    margin: 10px 0;
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input:not([type='checkbox']) {
+    background-color: transparent;
+    border: 2px solid #ecf2ff;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.checkbox-container label {
+    color: #7a728c;
+    font-weight: normal;
+}
+
+.checkbox-container a {
+    margin-left: auto;
+}
+
+.features {
+    flex: 1.5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature {
+    padding-left: 30px;
+    position: relative;
+    margin: 30px 0;
+}
+
+.feature i {
+    color: #2c62eb;
+    position: absolute;
+    top: 23px;
+    left: 0;
+}
+
+.features p {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    form {
+        border-right: none;
+    }
+}
